@@ -7,7 +7,7 @@ function Home() {
     // const [weather, setWeather] = useState([])
 
     const axiosCreate=axios.create({
-        baseURL:'https://api.openweathermap.org/data/2.5/'
+        baseURL:'https://api.openweathermap.org/data/2.5'
     })
     
         // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
@@ -35,7 +35,7 @@ function Home() {
           Latitude: {position.latitude}, Longitude: {position.longitude}
         </p>
       ) : (
-        <p>Loading...</p>
+        <span className="loading loading-infinity loading-lg"></span>
       )}
     </div>
   )
