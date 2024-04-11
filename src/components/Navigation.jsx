@@ -4,7 +4,7 @@ function Navigation() {
   return (
     <div className="navbar bg-base-100">
     <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-xl">My Weather</Link>
+        <Link to="/" className="text-xl hover:font-bold">My Weather</Link>
     </div>
     <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
@@ -12,7 +12,7 @@ function Navigation() {
         <li>
             <details>
             <summary>
-                Parent
+                Useful Links
             </summary>
             <ul className="p-2 bg-base-100 rounded-t-none">
                 <li><a>Link 1</a></li>
