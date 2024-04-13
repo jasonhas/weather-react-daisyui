@@ -14,7 +14,7 @@ function Forecast({lat,lon}) {
           console.log("Forecast: ",response);
         });
     },[forecastURL])
-    
+
   return (
     <>
     {forecast ? (
@@ -22,9 +22,9 @@ function Forecast({lat,lon}) {
                 <div>Forecast</div>
                 <ul>
                     {forecast.list.map((item,idx) => (
-                        <li key={idx}>{item.dt_txt} / {item.main.temp} / Min: {item.main.temp_min.toFixed()} / Max: {item.main.temp_max.toFixed()}</li>
-                    )
-                )}
+                      <li key={idx}>{item.dt_txt} / {item.main.temp} / Min: {item.main.temp_min.toFixed()} / Max: {item.main.temp_max.toFixed()}</li>
+                      ))
+                    }
                 </ul>
         </div>
     ):
