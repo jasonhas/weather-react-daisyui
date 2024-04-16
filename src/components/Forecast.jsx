@@ -27,15 +27,19 @@ function Forecast({lat,lon}) {
                 <div>Forecast</div>
                 <div>
                   <h3 className='font-bold'>Next 3 Hours</h3>
+                  <div>
                   {forecast.list.map((wthr,cnt) =>
                   {
                     const dd = wthr.dt_txt.split(" ")
                     console.log("DX: ",dd[0])
                     if(result === dd[0]) {
-                      console.log("Today: ", cnt)
+                       return <p>{wthr.main.temp.toFixed()}</p>
+                      console.log("Match: ", wthr.main.temp)
                     }
                   })
                 }
+                  </div>
+
                 </div>
                 <ul>
                     {forecast.list.map((item,idx) => 
