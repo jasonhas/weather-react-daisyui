@@ -15,7 +15,7 @@ function Navigation() {
                 Useful Links
             </summary>
             <ul className="p-2 bg-base-100 rounded-t-none">
-                <li><a>Link 1</a></li>
+                <li><Link to="/locations">Locations</Link></li>
                 <li><a>Link 2</a></li>
             </ul>
             </details>

@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
+import Locations from "./pages/locations"
 import Layout from "./components/MainLayout"
 import Page404 from "./pages/Page404"
 
@@ -18,6 +19,10 @@ function App() {
         {
           path: "/about",
           element: <About/>
+        },
+        {
+          path: "/locations",
+          element: <Locations/>
         }
       ]
     }
