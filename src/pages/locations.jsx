@@ -4,7 +4,7 @@ import CityList from '../components/CityList';
 
 function locations() {
     const apiKey = '4f1c31ac1f3a42218a16c5af9abd8ec9';
-    const [data, setData] = useState({})
+    const [cityData, setData] = useState({})
     const [location, setLocation] = useState("")
     const [currentDate, setCurrentDate] = useState(getDate())
 
@@ -49,8 +49,9 @@ function locations() {
         
         
             <div className="prose text-3xl font-semibold mx-auto text-center pb-4">{currentDate}</div>
-
-            <CityList city={data}/>
+            { cityData.length > 0 ? (
+              <CityList cityData={cityData}/>
+            ):null}
         </div>
   )
 }
